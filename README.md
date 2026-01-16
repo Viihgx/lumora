@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Lumora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page moderna e responsiva para a **Lumora**, uma marca conceitual focada em presença digital com estética premium, clareza de mensagem e estrutura pronta para adaptação em diferentes nichos.
 
-Currently, two official plugins are available:
+## ✨ Visão do projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O Lumora foi criado para servir como base “vendável” de site institucional/landing page: fácil de personalizar, com seções bem definidas (Home, Sobre, Serviços), animações suaves e componentes reutilizáveis.
 
-## React Compiler
+## 🧱 Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Vite**
+* **React + TypeScript**
+* **Tailwind CSS**
+* **React Router**
+* **Framer Motion**
+* **Lucide Icons**
+* Componentes UI (estilo shadcn)
 
-## Expanding the ESLint configuration
+## ✅ O que tem aqui
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Layout global com Header/Footer e navegação
+* Páginas: **Home**, **Sobre**, **Serviços**
+* Seções prontas: Hero, Processo, Benefícios, CTA etc.
+* Config central de marca: `src/config/brand.ts`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estrutura (resumo)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* `src/Layout.tsx` — layout base (header/footer + Outlet)
+* `src/Pages/*` — páginas
+* `src/components/home/*` — seções da Home
+* `src/components/about/*` — seções do Sobre
+* `src/components/services/*` — seções de Serviços
+* `src/config/brand.ts` — textos/links/cta/identidade
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ▶️ Como rodar localmente
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Como personalizar rápido
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Edite principalmente:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* `src/config/brand.ts` (nome, CTA, email, telefone, links e textos)
+* componentes em `src/components/**` (textos e seções)
+
+## 🚀 Deploy
+
+Deploy recomendado via **Vercel** (importando o repositório do GitHub).
+
+## 📸 Preview
+<img width="1902" height="892" alt="image" src="https://github.com/user-attachments/assets/7fc4a84d-1182-4837-9cb0-00fcca607021" />
+<img width="1900" height="956" alt="image" src="https://github.com/user-attachments/assets/8c63f7e7-9485-47c2-9ceb-01f635ac8d00" />
+<img width="1901" height="952" alt="image" src="https://github.com/user-attachments/assets/14f85e08-d09c-45c7-bd0c-f8426fd5302d" />
+<img width="1891" height="951" alt="image" src="https://github.com/user-attachments/assets/99392e02-caaa-43d4-a0b8-f03695ae0cbb" />
+
+
+---
+
+Feito com carinho e atenção a detalhes de UI/UX 💛
