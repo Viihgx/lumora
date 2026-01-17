@@ -17,25 +17,29 @@ const services: Service[] = [
     icon: Building2,
     title: "Estratégia & Direcionamento",
     description: "Clareza de metas, prioridade e plano de ação.",
-    image: "https://images.unsplash.com/photo-1568702846914-96b305d2uj38?w=600&q=80"
+    image:
+      "https://plus.unsplash.com/premium_photo-1757553359198-44ac02451b7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: Monitor,
     title: "Identidade & Posicionamento",
     description: "Marca forte, mensagem que conecta.",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80"
+    image:
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
   },
   {
     icon: Bus,
     title: "Estruturação de Processos",
     description: "Organização do dia a dia pra não virar caos”.",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&q=80"
+    image:
+      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: MapPin,
     title: "Otimização & Performance",
     description: "Melhorias contínuas com foco em resultado.",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80"
+    image:
+      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80",
   },
 ];
 
@@ -68,11 +72,15 @@ export default function ServicesPreview() {
                     </div>
                     <ArrowRight className="w-6 h-6 text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
                 <div className="h-48 overflow-hidden">
-                  <img 
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -91,7 +99,11 @@ export default function ServicesPreview() {
           className="text-center mt-12"
         >
           <Link to="/services">
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-12 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900">
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full px-8 h-12 border-slate-300 hover:bg-slate-900 hover:text-white hover:border-slate-900"
+            >
               Ver todas as soluções
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

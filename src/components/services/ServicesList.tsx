@@ -74,7 +74,7 @@ const services: Service[] = [
       "Documentação",
     ],
     image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+      "https://images.unsplash.com/photo-1753715613388-7e03410b1dce?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: Search,
@@ -88,7 +88,7 @@ const services: Service[] = [
       "Fluxo de leitura",
     ],
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: BarChart3,
